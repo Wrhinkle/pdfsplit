@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Splitter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>PDF Splitter</h1>
+    <div id="drop-area">
+      <form class="my-form">
+        <p>Upload a PDF file using drag and drop or</p>
+        <input type="file" id="fileElem" accept=".pdf">
+        <label class="button" for="fileElem">Select a file</label>
+      </form>
+      <div id="gallery"></div>
+    </div>
+    <button id="splitButton" disabled>Split PDF</button>
+    <div id="pageContainer"></div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
